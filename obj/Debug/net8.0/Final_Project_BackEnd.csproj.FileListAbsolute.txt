@@ -31,3 +31,4 @@
 /Users/conorwantuch/code/ga/projects/Final_Project_BackEnd/obj/Debug/net8.0/Final_Project_BackEnd.pdb
 /Users/conorwantuch/code/ga/projects/Final_Project_BackEnd/obj/Debug/net8.0/Final_Project_BackEnd.genruntimeconfig.cache
 /Users/conorwantuch/code/ga/projects/Final_Project_BackEnd/obj/Debug/net8.0/ref/Final_Project_BackEnd.dll
+/Users/conorwantuch/code/ga/projects/Final_Project_BackEnd/obj/Debug/net8.0/Final_Project_BackEnd.sourcelink.json

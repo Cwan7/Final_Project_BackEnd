@@ -8,12 +8,7 @@ namespace Dogs.Controllers
     [Route("api/[controller]")]
     public class DogsController : ControllerBase
     {
-        private readonly HttpClient _httpClient;
-
-        public DogsController(HttpClient httpClient)
-        {
-            _httpClient = httpClient;
-        }
+        private HttpClient dogApiRequest = new HttpClient();
 
         [HttpGet]
         public async Task<IActionResult> GetDogs()
@@ -22,12 +17,22 @@ namespace Dogs.Controllers
             var request = new HttpRequestMessage(HttpMethod.Get, "https://api.thedogapi.com/v1/breeds");
             request.Headers.Add("x-api-key", apiKey);
 
-            var response = await _httpClient.SendAsync(request);
+            var response = await dogApiRequest.SendAsync(request);
             var content = await response.Content.ReadAsStringAsync();
 
             return Content(content, "application/json");
         }
     }
 }
-//Browser calls /api/cats ➝ ASP.NET creates CatsController ➝ Injects HttpClient ➝ Runs GetCats() ➝ Prepares request ➝ Sends request ➝ Gets response ➝ Returns JSON
+
+
+
+
+
+
+
+
+
+
+//Browser calls /api/cats ➝ ASP.NET creates CatsController ➝ ➝ Runs GetCats() ➝ Prepares request ➝ Sends request ➝ Gets response ➝ Returns JSON
 

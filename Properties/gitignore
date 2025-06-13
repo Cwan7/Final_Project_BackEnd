@@ -1,4 +1,29 @@
-dogAPI key = live_cYOEW54OGV0QZxYnKx82NYDqUWSaV48ZODUWf7fCzlWAGcEZKAWj9XzAHMaC20HG
-catAPI key = live_WPeNhi2SuybBzK53iLQYVYwM82a7YD4EohwTCR1G5OIhDwNYSf73KstXGXSbI9Xp
-bin/
-obj/
+
+
+bin/ obj/ *.user *.suo *.sln.docstates *.csproj.user
+
+
+
+.vscode/ .idea/ *.code-workspace
+
+
+appsettings*.json *.env secrets.json
+
+
+
+*.log logs/
+
+
+*.tmp *.temp *.bak *.swp
+
+
+
+*.nupkg packages/ project.lock.json
+
+
+
+publish/
+
+
+
+.DS_Store Thumbs.db

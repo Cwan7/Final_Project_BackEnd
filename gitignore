@@ -1,0 +1,24 @@
+ .vscode/
+ .idea/
+ *.code-workspace
+
+ appsettings*.json
+ *.env
+ secrets.json
+
+ *.log
+ logs/
+
+ *.tmp
+ *.temp
+ *.bak
+ *.swp
+
+ *.nupkg
+ packages/
+ project.lock.json
+
+ publish/
+
+ .DS_Store
+ Thumbs.db
